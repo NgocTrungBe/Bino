@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@font-face {
+    src: url(../fonts/BebasNeue/BebasNeueRegular-gxj83.ttf);
+    font-family: BebasNeu;
+}
+
+@font-face {
+    src: url(../fonts/AlfaSlabOne/AlfaSlabOne-Regular.ttf);
+    font-family: AlfaSlabOne;
+}
+
+* {
+    font-family: 'BebasNeu';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 62.5%;
+    scroll-behavior: smooth;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+a,
+input {
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
