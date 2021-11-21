@@ -1,17 +1,14 @@
-const header = document.querySelector("#header");
-const menu = document.querySelector("#menu");
-const nav = document.querySelector(".header-top__menu");
+const navItems = document.querySelectorAll('.header__nav ul li a');
 
 
-window.addEventListener("scroll", function() {
-    header.classList.toggle("sticky", window.scrollY > 100);
-});
+//nav click handle 
 
-menu.addEventListener("click", function() {
-    this.classList.toggle("fa-times");
-    nav.classList.toggle("menu-toggle");
+navItems.forEach((item, index) => {
+
+    item.addEventListener("click", function() {
+        const navItemIsActive = document.querySelector('.header__nav ul li a.active');
+        navItemIsActive.classList.remove("active");
+        this.classList.add("active")
+    });
+
 })
-
-const banner = document.querySelector(".banner");
-const banner__single_item = document.querySelectorAll(".banner__single-item img");
-console.log(banner__single_item[0].clientWidth)

@@ -1,4 +1,9 @@
-#header {
-    height: 30px;
-    background: red;
+@import 'header';
+#wrapper {
+    max-width: 1920px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
 }
