@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'variables';
 .header {
+    position: relative;
     height: 990px;
     background-image: url(../images/background.png);
     background-position: center;
@@ -19,12 +20,15 @@
                 display: inline-block;
                 margin-left: 50px;
                 a {
-                    font-family: 'Open Sans';
+                    font-family: 'Open Sans', sans-serif;
                     font-size: 1.3rem;
                     color: #fff;
                     font-weight: 600;
                     text-transform: uppercase;
                     transition: 0.3s;
+                    &.active {
+                        color: $primary-color;
+                    }
                     &.active::after {
                         margin-top: 20px;
                         content: "";
