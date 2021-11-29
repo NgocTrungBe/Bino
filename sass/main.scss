@@ -1,0 +1,25 @@
+//abstracts
+@import './abstracts/variables';
+@import './abstracts/mixins';
+//base
+@import './base/base';
+@import './base/typography';
+//components
+@import './components/buttons';
+@import './components/circle';
+//layout
+@import './layout/grid';
+@import './layout/header';
+//pages
+@import './pages/about';
+//vendors
+@import './vendors/fontawesome';
+#wrapper {
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}

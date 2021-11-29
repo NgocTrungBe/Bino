@@ -1,0 +1,123 @@
+/* media queries */
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header #menu-icon {
+        display: block;
+    }
+    .header__nav {
+        padding: 20px 0;
+        position: absolute;
+        top: 100%;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background: #e4ada7;
+        z-index: 999;
+        transition: 0.2s;
+    }
+    .header__nav.menu-toggle {
+        right: 10px;
+    }
+    .header__nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__nav ul li a.active::after {
+        display: none;
+    }
+    .header__nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .header .slider__title {
+        font-size: 5.2rem;
+        line-height: 5.2rem;
+        letter-spacing: 0.8rem;
+    }
+}
+
+
+/* ---mobile---- */
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    .header .slider__subtitle {
+        font-size: 2rem;
+    }
+    .header .slider__title {
+        margin-top: 30px;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        letter-spacing: 0.8rem;
+    }
+    .header .slider__desc {
+        margin-top: 35px;
+        padding-left: 195px;
+        padding-right: 195px;
+    }
+    .curent-btn--primary,
+    .curent-btn--gradient {
+        width: 200px;
+        padding: 18px 40px;
+    }
+}
+
+
+/* ---mobile---- */
+
+@media only screen and (max-width: 450px) {
+    .header .slider__subtitle {
+        font-size: 1.6rem;
+    }
+    .header .slider__title {
+        margin-top: 25px;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.4rem;
+    }
+    .header .slider__desc {
+        margin-top: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .curent-btn--primary,
+    .curent-btn--gradient {
+        width: 185px;
+        padding: 15px 35px;
+    }
+    .header .carousel-control-prev {
+        width: 30px;
+        height: 30px;
+        left: 10px;
+    }
+    .header .carousel-control-next {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+    }
+    .curent-btn--primary,
+    .curent-btn--gradient {
+        margin: 0;
+        width: 200px;
+        padding: 15px 30px;
+        font-size: 1.6rem;
+    }
+    .curent-btn--gradient {
+        margin-top: 20px;
+    }
+    .header .slider__group-button {
+        margin-top: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
