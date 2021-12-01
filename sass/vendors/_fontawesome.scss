@@ -3,11 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 @font-face {
-    src: url(../fonts/BebasNeue/BebasNeueRegular-gxj83.ttf);
+    src: url(/fonts/BebasNeue/BebasNeueRegular-gxj83.ttf);
     font-family: BebasNeu;
 }
 
 @font-face {
-    src: url(../fonts/AlfaSlabOne/AlfaSlabOne-Regular.ttf);
+    src: url(/fonts/AlfaSlabOne/AlfaSlabOne-Regular.ttf);
     font-family: AlfaSlabOne;
+}
+
+@font-face {
+    src: url(/fonts/MyriadPro/FontsFree-Net-MYRIADPRO-REGULAR.ttf);
+    font-family: Myriad Pro;
 }

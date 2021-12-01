@@ -4,6 +4,12 @@
     justify-content: space-between;
 }
 
+@mixin flexStart {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 @mixin flexAlignCenter {
     display: flex;
     align-items: center;
@@ -38,4 +44,29 @@
             @content;
         }
     }
+}
+
+// cacl item
+@mixin calcWidthOfItem($column, $spacing) {
+    width: -moz-calc(-moz-calc(100% / #{$column}) - #{$spacing});
+    width: -webkit-calc(-webkit-calc(100% / #{$column}) - #{$spacing});
+    width: calc(calc(100% / #{$column}) - #{$spacing});
+}
+
+// text
+@mixin text($fontsize, $font-weight, $font-family, $text-transform, $color, $letter-spacing) {
+    font-size: $fontsize;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    text-transform: $text-transform;
+    color: $color;
+    letter-spacing: $letter-spacing;
+}
+
+// animation
+@mixin animation($name, $darution, $iteration-count, $timing-function) {
+    animation-name: $name;
+    animation-duration: $darution;
+    animation-iteration-count: $iteration-count;
+    animation-timing-function: $timing-function;
 }

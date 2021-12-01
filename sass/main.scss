@@ -4,14 +4,15 @@
 //base
 @import './base/base';
 @import './base/typography';
+@import './base/animations';
 //components
 @import './components/buttons';
 @import './components/circle';
 //layout
-@import './layout/grid';
 @import './layout/header';
 //pages
 @import './pages/about';
+@import './pages/history';
 //vendors
 @import './vendors/fontawesome';
 #wrapper {

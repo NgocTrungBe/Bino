@@ -12,9 +12,11 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!---css link--->
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./sass/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/libs/bootstrap.min.css">
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
@@ -34,7 +36,7 @@
                         <div class="header__nav">
                             <ul>
                                 <li><a href="#" class="active">home</a></li>
-                                <li><a href="#">about us</a></li>
+                                <li><a href="#aboutSection">about us</a></li>
                                 <li><a href="#">portfolio</a></li>
                                 <li><a href="#">pricing</a></li>
                                 <li><a href="#">team</a></li>
@@ -46,7 +48,7 @@
                 </div>
             </div>
 
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="banner" style="background-image: url('./images/background.png');"></div>
@@ -74,7 +76,7 @@
 
                     </div>
                     <div class="carousel-item">
-                        <div class="banner" style="background-image: url('./images/background.png');"></div>
+                        <div class="banner" style="background-image: url('./images/background2.jpg');"></div>
                         <div class="slider__content">
                             <p class="slider__subtitle">Our Clients Are Out First Priority</p>
                             <h2 class="slider__title">Welcome to bino</h2>
@@ -115,8 +117,9 @@
         <!--header section end-->
 
         <!-- about section start -->
-        <section class="about">
+        <section id="aboutSection" class="about">
             <div class="container">
+                <!-- about intro -->
                 <div class="about__intro">
                     <div class="about__single-intro">
                         <div class="about__single-intro__img">
@@ -158,9 +161,37 @@
 
 
                 </div>
+
             </div>
         </section>
         <!-- about section end -->
+        <!-- history section start -->
+        <div class="history">
+            <div class="container">
+                <div class="history__content">
+                    <div class="history__content__img" data-aos="fade-up">
+                        <img src="./images/monitor.png" alt="">
+                    </div>
+                    <div class="history__content__text" data-aos="fade-left">
+                        <div class="history__content__text__title-box">
+                            <h2>our history</h2>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti nulla, doloribus velit consequatur vel maxime repellat laborum deleniti excepturi quidem, optio odit facere, fugiat iusto dolores. Ipsa adipisci dolores exercitationem.
+
+                        </p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti nulla, doloribus velit consequatur vel maxime repellat laborum deleniti excepturi quidem, optio odit facere, fugiat iusto dolores. Ipsa adipisci dolores exercitationem.
+
+                        </p>
+                        <div class="curent-btn curent-btn--primary history-btn">
+                            browser our work
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- history section end -->
         <!--banner section start-->
         <div style="height: 1000px;"></div>
 
@@ -168,10 +199,16 @@
 
     </div>
 
-    <!--custom js link--->
+    <!--jquery--->
     <script src="./js/libs/_jquery.js"></script>
+    <!--bootstrap--->
     <script src="./js/libs/bootstrap.min.js"></script>
+    <!-- animation on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--custom js--->
     <script src="./js/script.js"></script>
+
+
 
 </body>
 

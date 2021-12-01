@@ -1,0 +1,22 @@
+// history animation
+@keyframes imageUp {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, 407px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes textRightToLeft {
+    0% {
+        opacity: 0.5;
+        transform: translate(0, 407px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
