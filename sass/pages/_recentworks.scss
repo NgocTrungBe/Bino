@@ -1,0 +1,64 @@
+.recent-works {
+    background: #fff;
+    &__title {
+        margin-top: 134px;
+        text-align: center;
+        @include responsive(phone) {
+            margin-top: 70px;
+        }
+        h2 {
+            @include responsive(phone) {
+                font-size: 2.6rem;
+                letter-spacing: 0.3;
+            }
+        }
+        p {
+            @include text(1.4rem, 500, 'Open Sans', initial, #6a6a6a, 0);
+        }
+    }
+    &__nav {
+        margin-top: 68px;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            a {
+                @include text(1.4rem, 600, 'Open Sans', uppercase, #6a6a6a, 0);
+                text-decoration: none;
+                margin-right: 10px;
+                transition: 0.3s ease-out;
+                &:hover {
+                    color: $primary-color;
+                }
+                &.active {
+                    color: $primary-color;
+                }
+            }
+            span {
+                @include text(1.4rem, bold, 'Open Sans', uppercase, #6a6a6a, 0);
+                font-weight: bold;
+            }
+        }
+    }
+    &__images {
+        margin-top: 48px;
+        @include flex(row, unset, unset, wrap);
+        @include responsive(phone) {
+            padding: 0 20px;
+        }
+        &__item {
+            @include calcWidthOfItem(4, 0px);
+            @include responsive(tab-port) {
+                @include calcWidthOfItem(2, 0px);
+            }
+            @include responsive(phone) {
+                @include calcWidthOfItem(1, 0px);
+            }
+            img {
+                @include responsive(phone) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

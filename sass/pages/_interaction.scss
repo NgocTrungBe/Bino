@@ -1,0 +1,52 @@
+.interaction {
+    margin-top: 150px;
+    background-image: url(.././images/interactions.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 511px;
+    &__list {
+        height: 511px;
+        @include flex(row, center, space-between, wrap);
+    }
+    &__single {
+        @include flex(column, center, center, unset);
+        &__icon {
+            width: 102px;
+            height: 102px;
+            line-height: 107px;
+            background: transparent;
+            text-align: center;
+            border: 1px solid #928c87;
+            border-radius: 100%;
+            color: #ffffff;
+            font-size: 2.8rem;
+            @include responsive(phone) {
+                width: 82px;
+                height: 82px;
+                line-height: 87px;
+            }
+        }
+        &__text {
+            margin-top: 48px;
+            text-align: center;
+            @include responsive(phone) {
+                margin-top: 28px;
+            }
+            span {
+                @include text(3rem, bold, 'Open Sans', uppercase, #ffffff, 0);
+                @include responsive(phone) {
+                    @include text(2.8rem, bold, 'Open Sans', uppercase, #ffffff, 0);
+                }
+            }
+            p {
+                margin-top: 17px;
+                @include text(2rem, 600, 'Open Sans', capitalize, #f4f5f9, 0);
+                line-height: 0;
+                @include responsive(phone) {
+                    @include text(1.8rem, 600, 'Open Sans', capitalize, #f4f5f9, 0);
+                }
+            }
+        }
+    }
+}

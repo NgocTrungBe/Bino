@@ -1,0 +1,21 @@
+.underline {
+    margin-top: 30px;
+    @include flex(row, center, center, unset);
+    .line {
+        width: 80px;
+        height: 1px;
+        background: #6a6a6a;
+    }
+    .dot {
+        margin: 0 14px;
+        width: 7px;
+        height: 7px;
+        background-color: transparent;
+        border: 2px solid #6a6a6a;
+        border-radius: 100%;
+        &--primary {
+            background: $primary-color;
+            border: none;
+        }
+    }
+}

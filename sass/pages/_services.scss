@@ -1,0 +1,95 @@
+.services {
+    @include flexContentCenter();
+    @include responsive(tab-port) {
+        @include flexAlignCenter();
+        flex-direction: column;
+        width: 100%;
+    }
+    &__content {
+        position: relative;
+        @include flexColumnContentEnd();
+        flex-direction: column;
+        background: #202020;
+        width: 60%;
+        padding-right: 65px;
+        padding-left: 396px;
+        @include responsive(tab-land) {
+            padding-left: 96px;
+        }
+        @include responsive(tab-port) {
+            @include flexAlignCenter();
+            flex-direction: column;
+            width: 100%;
+            padding: 30px 50px;
+        }
+        @include responsive(phone) {
+            padding: 30px 30px;
+        }
+        &__nav {
+            @include flex(column, unset, unset, unset);
+            position: absolute;
+            left: 48px;
+            top: 50%;
+            transform: translateY(-50%);
+            div {
+                background: #3e3e3e;
+                width: 3px;
+                height: 35px;
+                margin-bottom: 10px;
+                &:nth-child(2) {
+                    background: $primary-color;
+                }
+            }
+            @include responsive(tab-port) {
+                left: 28px;
+            }
+            @include responsive(phone) {
+                left: 8px;
+            }
+        }
+        &__title {
+            display: inline-block;
+            border-right: 3px solid $primary-color;
+            padding-right: 35px;
+            @include responsive(phone) {
+                padding-right: 15px;
+            }
+            h2 {
+                @include text(3.6rem, bold, 'Open Sans', uppercase, #f4f5f9, 0.8rem);
+                line-height: 3.6rem;
+                margin: 0;
+                @include responsive(phone) {
+                    @include text(2.3rem, bold, 'Open Sans', uppercase, #f4f5f9, 0.5rem);
+                    line-height: 2.3rem;
+                }
+            }
+        }
+        &__single {
+            margin-top: 25px;
+            text-align: right;
+            @include responsive(phone) {
+                text-align: left;
+            }
+            h4 {
+                @include text(1.8rem, bold, 'Open Sans', uppercase, #c24336, 0.1rem);
+                @include responsive(phone) {
+                    @include text(1.6rem, bold, 'Open Sans', uppercase, #c24336, 0.5rem);
+                }
+            }
+            p {
+                @include text(1.4rem, 500, 'Open Sans', none, #676767, 0);
+            }
+        }
+    }
+    &__img {
+        width: 40%;
+        @include responsive(tab-port) {
+            width: 100%;
+        }
+        img {
+            @include responsive(tab-port) {
+                width: 100%;
+            }
+        }
+    }
+}

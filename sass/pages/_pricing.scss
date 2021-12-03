@@ -1,0 +1,71 @@
+.pricing {
+    &__list {
+        @include flex(row, unset, unset, wrap);
+        margin-top: 65px;
+        margin-right: -15px;
+    }
+    &__item {
+        position: relative;
+        margin-right: 15px;
+        @include calcWidthOfItem(3, 15px);
+        &__top {
+            text-align: center;
+            padding-top: 49px;
+            padding-bottom: 135px;
+            background: #999999;
+            span {
+                @include text(2.4rem, 600, 'Open Sans', uppercase, #ffffff, 0.2rem);
+            }
+        }
+        &__bottom {
+            text-align: center;
+            background: #f4f5f9;
+            padding: 0 84px;
+            p {
+                padding-top: 120px;
+                @include text(1.4rem, 600, 'Open Sans', capitalize, #999999, 0);
+                line-height: 23px;
+            }
+            .curent-btn.pricing-btn {
+                margin-top: 48px;
+                margin-bottom: 48px;
+                width: 146px;
+                background: #999999;
+                padding: 16px 30px;
+                a {
+                    @include text(1.2rem, 600, 'Open Sans', uppercase, #fff, 0);
+                }
+            }
+        }
+        &:nth-child(2) &__top {
+            background: #e74c3c;
+        }
+        &:nth-child(2) &__bottom {
+            .curent-btn.pricing-btn {
+                background: #e74c3c;
+            }
+        }
+        .circle-cover.header-circle {
+            position: absolute;
+            left: 50%;
+            top: 120px;
+            transform: translateX(-50%);
+            width: 172px;
+            height: 172px;
+            background-color: rgba(248, 246, 246, 0.5);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            .circle {
+                width: 152px;
+                height: 152px;
+                @include flex(column, center, center, unset);
+                span {
+                    @include text(3.8rem, bold, 'Open Sans', uppercase, #999999, 0);
+                }
+                p {
+                    @include text(1.5rem, 700, 'Open Sans', unset, #999999, 0);
+                    line-height: 0;
+                }
+            }
+        }
+    }
+}

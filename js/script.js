@@ -8,6 +8,16 @@ navItems.forEach((item, index) => {
     });
 
 });
+//recent works nav handle
+const recentWorkNavItems = document.querySelectorAll('.recent-works__nav li a');
+recentWorkNavItems.forEach((item, index) => {
+    item.addEventListener("click", function() {
+        const navItemIsActive = document.querySelector('.recent-works__nav li a.active');
+        navItemIsActive.classList.remove("active");
+        this.classList.add("active");
+    });
+
+});
 //mobile menu handle
 const menu_icon = document.querySelector('#menu-icon');
 const nav = document.querySelector('.header__nav');

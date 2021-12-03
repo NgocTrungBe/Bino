@@ -1,0 +1,95 @@
+.case-study {
+    &__container {
+        @include responsive(phone) {
+            @include flex(column, center, center, unset);
+            padding: 10px;
+        }
+    }
+    .section-title.case-study__title {
+        margin-top: 70px;
+    }
+    &__content {
+        position: relative;
+        &__slider {
+            width: 60%;
+            background-color: #ffffff;
+            position: absolute;
+            left: 0;
+            top: 116px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            z-index: 99;
+            opacity: 1;
+            @include responsive(phone) {
+                width: 100%;
+                position: unset;
+                margin-top: 30px;
+            }
+        }
+        &__box {
+            @include flex(column, center, unset, unset);
+            text-align: center;
+            padding: 80px 65px 115px 60px;
+            @include responsive(phone) {
+                padding: 40px 25px 75px 40px;
+            }
+            h4 {
+                position: relative;
+                margin-top: 53px;
+                display: inline-block;
+                @include text(1.8rem, 600, 'Open Sans', uppercase, #6a6a6a, 0.5rem);
+                line-height: 1.8rem;
+                padding-bottom: 30px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50px;
+                    transform: translateX(-50%);
+                    width: 40px;
+                    height: 2px;
+                    background-color: #6a6a6a;
+                }
+                @include responsive(phone) {
+                    margin-top: 33px;
+                }
+            }
+            p {
+                margin-top: 25px;
+                @include text(1.4rem, 500, 'Open Sans', initial, #6a6a6a, 0);
+            }
+            .case-study-btn {
+                display: inline-block;
+                width: 145px;
+                margin-top: 45px;
+            }
+        }
+        #case-study-carousel .carousel-indicators {
+            margin: 0;
+            bottom: 40px;
+            @include responsive(phone) {
+                bottom: 20px;
+            }
+        }
+        #case-study-carousel .carousel-indicators [data-bs-target] {
+            width: 15px;
+            height: 15px;
+            background-color: #f4f5f9;
+            transition: opacity .6s ease;
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+        #case-study-carousel .carousel-indicators .active {
+            background-color: $primary-color;
+        }
+        &__img {
+            text-align: right;
+            img {
+                margin-top: 70px;
+                @include responsive(phone) {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

@@ -8,11 +8,18 @@
 //components
 @import './components/buttons';
 @import './components/circle';
+@import './components/underline';
 //layout
 @import './layout/header';
+@import './layout/section';
 //pages
 @import './pages/about';
 @import './pages/history';
+@import './pages/services';
+@import './pages/recentworks';
+@import './pages/casestudy';
+@import './pages/interaction';
+@import './pages/pricing';
 //vendors
 @import './vendors/fontawesome';
 #wrapper {
